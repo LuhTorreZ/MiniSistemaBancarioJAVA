@@ -1,12 +1,15 @@
+
 import java.util.Scanner;
 
 public class App {
+
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         Usuarios usuarioLogado; // Vamos chamar o objeto de usuarioLogado
 
         // --- ETAPA DE CADASTRO ---
-        System.out.println("--- BEM-VINDO! VAMOS CRIAR SUA CONTA ---");
+        System.out.println("\n BEM VINDO A TRZ BANKING, O SEU BANCO DIGITAL ");
+        System.out.println("--- VAMOS CRIAR SUA CONTA ---");
         usuarioLogado = new Usuarios();
 
         System.out.print("Insira seu nome: ");
@@ -23,7 +26,7 @@ public class App {
 
         // --- MENU DE OPERAÇÕES ---
         int opcao = 0;
-        while (opcao != 4) { // O loop continua enquanto a opção não for 4 (Sair)
+        while (opcao != 4) { 
             System.out.println("\n--- O que você deseja fazer? ---");
             System.out.println("1. Depositar");
             System.out.println("2. Sacar");
